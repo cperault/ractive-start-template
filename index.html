@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fun with Ractive.js</title>
+    <meta name="description" content="Ractive.js web app" />
+    <meta name="author" content="YourName" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <script src="http://cdn.ractivejs.org/latest/ractive.js"></script>
+    <div class="container">
+      <div id="app"></div>
+      <script id="template" type="text/ractive"></script>
+      <script>
+        const ractive = new Ractive({
+          target: "#app",
+          template: "#template",
+        });
+      </script>
+    </div>
+  </body>
+</html>
